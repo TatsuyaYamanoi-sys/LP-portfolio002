@@ -3,8 +3,8 @@ body{
 }
 
 .container{
-    max-width: 1360px;
-    margin: 0 auto;
+    max-width: 1160px;
+    margin: 0 auto; /*レスポンシブ対応の為、左右を初期値に合わせる*/
 }
 
 a{
@@ -15,7 +15,7 @@ a{
     width: 100%;
     height: 100px;
     position: absolute;     /*absoluteでメインビジュアルを重ねる*/
-    z-index: 1;
+    z-index: 1;             /*優先度 1*/
     top: 0;
     bottom: 0;
 }
@@ -67,28 +67,29 @@ a{
 
 .main-visual > .container{
     display: flex;
-    height: 700px;
+    height: 750px;
     align-items: center;
-    position: relative;
+    position: relative;     /*ヘッダー,バナーにabsoluteを使いたいため*/
 }
 
 .main-visual_ttl{
     font-size: 2em;
     color: #FFF;
-    padding: 0 100px;
+    padding: 0 90px;       /*メインビジュアル左から90px空け*/
+    letter-spacing: 0.08em;
 }
 
 #main-visual_ttl_line1{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(70, 70, 70, 0.5);
     padding: 5px 10px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;     /*文字間調節*/
     max-width: 85%;
 }
 
 #main-visual_ttl_line2{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(70, 70, 70, 0.5);
     padding: 5px 10px;
 }
 
@@ -122,8 +123,113 @@ a{
     color: #fff;
 }
 
+/*紹介*/
+
+.section_area_about{
+
+}
+
+.section_area_about > .container{
+
+}
+
+[class*="section_area"]{
+    padding: 125px;
+    box-sizing: border-box;
+}
+
+.section_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.section_header:first-child{
+    margin-top: 100px;
+}*/
+
+.section_ttl{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.section_ttl:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+}
+
+.section_body{
+
+}
+
+.layout_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    margin-right: 40px;
+}
+
+.txt .ttl{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*特徴*/
+.section_area_feature{
+    background-color: #000;
+
+}
+
+.section_area_feature .section_ttl{
+    color: #FFF;
+}
+
+.list_feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.list_feature li{
+    list-style: none;
+    width: 33%;
+}
+
+.list_feature li .ttl{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*プロフィール*/
+
+/*コンタクト*/
+
+.section_area_contact > .container{
+
+}
+
 /*フッター*/
 
 .page-footer{
-    
+    text-align: center;
+}
+
+.container .list_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45%;
+}
+
+.container small{
+    font-size: 0.9em;
 }
