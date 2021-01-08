@@ -1,0 +1,35 @@
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.slide-img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 20px 2px 30px 2px;
+    box-shadow: 0 0 20px $bgBlueShadow;
+    box-sizing: border-box;
+}
+
+.slide-ttl{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.slide-discription {
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+.swiper-pagination-bullet{
+    background: $cWhite;
+    transition: .6s;
+}

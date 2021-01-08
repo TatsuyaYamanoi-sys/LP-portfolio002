@@ -6,128 +6,244 @@
     <meta name="keywords" content="機械設計,プログラミング,Webサイト制作,アプリ制作,プログラム制作,IoTデバイス," />
     <meta name="description" content="Webサイト・アプリケーション・IoTデバイス制作、RPA等IT課題は何でもご相談ください！" />
     <title>portfolio002</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Doctor.css">
+    <link rel="stylesheet" href="style/modules/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-    <header class="page-header">
-        <div class="container">
-            <div class="area_logo_header">
-                <a class="logo" href="./index.html">
-                    <img src="./img/logo/y's-teck_logo_wh2.png" alt="logo-header">
-                </a>
-            </div>
-            <nav class="nav_header">
-                <ul class="list_nav_header">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#feature">FEATURE</a></li>
-                    <li><a href="#profile">PROFILE</a></li>
-                    <li><a class="btn-icon_mail" href="">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    </div>
-    <main class="main-contents">
-        <div class="main-visual">
-            <div class="container">
-                <div class="main-visual_ttl">
-                    <h2>
-                        <span class="dark_bg" id="main-visual_ttl_line1">御社のIT課題を</span><br>
-                        <span class="dark_bg" id="main-visual_ttl_line2">トータルサポート</span>
-                    </h2>
+    <div id="global-container">
+        <div id="container">
+            <header class="page-header">
+                <div class="page-header__inner">
+                    <div class="page-header__logo">
+                        <a class="logo" href="./index.html">
+                            <img src="./img/logo/y's-teck_logo_wh2.svg" alt="logo-header">
+                        </a>
+                    </div>
+                    <nav class="page-header__nav">
+                        <ul class="page-header__nav-ul">
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#feature">FEATURE</a></li>
+                            <li><a href="#profile">PROFILE</a></li>
+                            <li><a class="btn-icon_mail" href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <button class="page-header__mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-                <p class="main-banner"><a href="">無料<br>相談</a></p>
-            </div>
-        </div>
-        <!--紹介-->
-        <section class="section_area_about" id="about">
-            <div class="container">
-                <div class="section_header">
-                    <h2 class="section_ttl">ABOUT.</h2>
-                </div>
-                <div class="section_body">
-                    <!--画像+テキストのレイアウトを共通化-->
-                    <div class="layout_2">
-                        <div class="img">
-                            <img src="img/logo/y's-teck_logo_bk.png" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="ttl">Y's CODE とは？</p>
-                            <p class="discription">Y's CODEはシステム開発会社から独立したメンバーによって運営しています。</p>
+            </header>
+            <main class="main">
+                <div class="main__visual">
+                    <div class="main__img">
+                        <div class="main__inner">
+                            <div class="main__ttl">
+                                <h2>
+                                    <span class="bg-dark" id="main-visual_ttl_line1">御社のIT課題を</span><br>
+                                    <span class="bg-dark" id="main-visual_ttl_line2">トータルサポート</span>
+                                </h2>
+                            </div>
+                            <div class="main__banner"><a href="./php/form.php"><span>お気軽に</span><span>ご相談下さい</span></a></div>
                         </div>
                     </div>
+                    <div class="main__footer">
+                        <span class="scroll-txt">Scroll</span>
+                        <div class="scroll-bar"></div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!--特徴-->
-        <section class="section_area_feature" id="feature">
-            <div class="container">
-                <div class="section_header">
-                    <h2 class="section_ttl">FEATURE.</h2>
-                </div>
-                <div class="section_body">
-                    <ul class="list_feature">
-                        <li>
-                            <img src="" alt="">
-                            <p class="ttl">『やりたい事』を形に</p>
-                            <p class="discription">私たちの豊富な経験を生かして、御社のイメージをビジネス化します。</p>
-                        </li>
-                        <li>
-                            <img src="" alt="">
-                            <p class="ttl">リーズナブルな料金設定</p>
-                            <p class="discription">一貫して私たちが開発することによって、余計な経費を抑える事で皆様に還元します。</p>
-                        </li>
-                        <li>
-                            <img src="" alt="">
-                            <p class="ttl">協力しながら理想のビジネスへ</p>
-                            <p class="discription">アジャイル開発を行い、完成部分を見ながら皆様と打合せし、細かい調整を行いながら理想のビジネスを創ります。</p>
-                        </li>
+                <!--紹介-->
+                <section class="section-about" id="about">
+                    <div class="section-about__inner">
+                        <div class="section-about__header">
+                            <h2 class="section-about__ttl animate-title">ABOUT.</h2>
+                        </div>
+                        <div class="section-about__body">
+                            <!--画像+テキストのレイアウトを共通化-->
+                            <div class="layout-2blc">
+                                <div class="img">
+                                    <img src="img/logo/y's-teck_logo_bk.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <p class="ttl">Y's CODE とは？</p>
+                                    <p class="discription">Y's CODEはフルスタック開発を経験した熟練フリーランスメンバーで運営しています。</p>
+                                    <p class="discription">貴方のITミッションを解決するプロフェッショナル集団です。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--特徴-->
+                <section class="section-feature" id="feature">
+                    <div class="section-feature__inner">
+                        <div class="section-feature__header">
+                            <h2 class="section-feature__ttl animate-title">FEATURE.</h2>
+                        </div>
+                        <div class="section-feature__body">
+                            <ul class="layout-list">
+                                <li class="lastrow">                            
+                                    <img src="./img/img/feature01.jpg" alt="">
+                                    <p class="ttl">『やりたい事』を形に</p>
+                                    <p class="discription">これまでに培った豊富な経験を生かして、御社のイメージをビジネス化します。</p>
+                                </li>
+                                <li class="lastrow">
+                                    <img src="./img/img/feature02.jpg" alt="">
+                                    <p class="ttl">リーズナブルな料金設定</p>
+                                    <p class="discription">私は様々な分野でフルスタック開発を行ってきました。<br>外注を利用しない事で余計な経費を抑え、皆様に還元します。</p>
+                                </li>
+                                <li class="lastrow">
+                                    <img src="./img/img/feature03.jpg" alt="">
+                                    <p class="ttl">理想のビジネスへ</p>
+                                    <p class="discription">一度のプランニングでは上手く行かないかもしれません。<br>細かい打合せ・調整に時間を惜しまず、理想のビジネスを創ります。</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!--プロフィール-->
+                <section class="section-profile" id="profile">
+                    <div class="section-profile__inner">
+                        <div class="section-profile__header">
+                            <h2 class="section-profile__ttl animate-title">PROFILE.</h2>
+                        </div>
+                        <div class="section-profile__body">
+                            <div class="layout-2blc">
+                                <div class="img">
+                                    <img src="" alt="yamanoi-profile">
+                                </div>
+                                <div class="item">
+                                    <p class="ttl">Tatsuya Yamanoi</p>
+                                    <p class="discription">1989年 東京産まれ。 コンサル経験を活かしつつPGに挑戦。<br>組み込み開発やWebシステム開発等に携わる。<br>打合せは和やかに、仕事はしっかりと。趣味はゲームとテニス。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ポートフォリオ -->
+                <section class="section-portfolio" id="portfolio">
+                    <div class="section-portfolio__inner">
+                        <div class="section-portfolio__header">
+                            <h2 class="section-portfolio__ttl animate-title">PORTFOLIO.</h2>
+                        </div>
+                        <div class="section-portfolio__body">
+                            <div class="hero">
+                                <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="slide-img" src="./img/img/comingsoon.jpg" alt="">
+                                        <p class="slide-ttl">コーポレートサイト</p>
+                                        <p class="slide-discription">準備中です。</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slide-img" src="./img/img/comingsoon.jpg" alt="">
+                                        <p class="slide-ttl">一般向け ウェブサイト</p>
+                                        <p class="slide-discription">準備中です。</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slide-img" src="./img/img/comingsoon.jpg" alt="">
+                                        <p class="slide-ttl">toC ウェブサイト</p>
+                                        <p class="slide-discription">準備中です。</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slide-img" src="./img/img/comingsoon.jpg" alt="">
+                                        <p class="slide-ttl">ECサイト</p>
+                                        <p class="slide-discription">準備中です。</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slide-img" src="./img/img/comingsoon.jpg" alt="">
+                                        <p class="slide-ttl">業務系アプリケーション</p>
+                                        <p class="slide-discription">準備中です。</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="slide-img" src="./img/img/comingsoon.jpg" alt="">
+                                        <p class="slide-ttl">グラフィックデザイン</p>
+                                        <p class="slide-discription">準備中です。</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                            <!-- <ul class="layout-list">
+                                <li>
+                                    <img src="./img/img/comingsoon.jpg" alt="">
+                                    <p class="ttl">コーポレートサイト</p>
+                                    <p class="discription">準備中です。</p>
+                                </li>
+                                <li>
+                                    <img src="./img/img/comingsoon.jpg" alt="">
+                                    <p class="ttl">一般向け ウェブサイト</p>
+                                    <p class="discription">準備中です。</p>
+                                </li>
+                                <li>
+                                    <img src="./img/img/comingsoon.jpg" alt="">
+                                    <p class="ttl">toC ウェブサイト</p>
+                                    <p class="discription">準備中です。</p>
+                                </li>
+                                <li class="lastrow">
+                                    <img src="./img/img/comingsoon.jpg" alt="">
+                                    <p class="ttl">ECサイト</p>
+                                    <p class="discription">準備中です。</p>
+                                </li>
+                                <li class="lastrow">
+                                    <img src="./img/img/comingsoon.jpg" alt="">
+                                    <p class="ttl">業務系アプリケーション</p>
+                                    <p class="discription">準備中です。</p>
+                                </li>
+                                <li class="lastrow">
+                                    <img src="./img/img/comingsoon.jpg" alt="">
+                                    <p class="ttl">グラフィックデザイン</p>
+                                    <p class="discription">準備中です。</p>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </section>
+                <!--問い合わせ-->
+                <section class="section-contact" id="contact">
+                    <div class="section-contact__inner">
+                        <div class="section-contact__header">
+                            <h2 class="section-contact__ttl animate-title">CONTACT.</h2>
+                        </div>
+                        <div class="section-contact__body">
+                            <div class="txt">
+                                <p class="discription">ご相談・ご依頼、何でもお気軽にご連絡くださいませ。</p>
+                                <p class="hours">&lt;受付時間 : (月～金) 10:00 ～ 19:00&gt; </p>    
+                            </div>
+                            <a class="btn" href="./php/form.php"><span class="default">Contact</span><span class="hovering">Contact</span></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="page-footer">
+                <div class="page-footer__inner">
+                    <ul class="page-footer__list">
+                        <li><a class="youtube" href="" alt="youtube"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        <li><a class="twitter" href="" alt="twitter"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a class="facebook" href="" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a></li>
                     </ul>
+                    <span class="copyright"><small>&copy;2020 Y's CODE PF02</small></span>
                 </div>
-            </div>
-        </section>
-        <!--プロフィール-->
-        <section class="section_area_profile" id="profile">
-            <div class="container">
-                <div class="section_header">
-                    <h2 class="section_ttl">PROFILE.</h2>
-                </div>
-                <div class="section_body">
-                    <div class="layout_2">
-                        <div class="img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="txt">
-                            <p class="ttl">Tatsuya Yamanoi</p>
-                            <p class="discription">1989年 東京に産まれる。 コンサルからPGに転職。組み込み開発やWeb開発に携わる。打合せは和やかに、仕事はしっかりと。趣味はゲームとテニス。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--問い合わせ-->
-        <section class="section_area_contact" id="contact">
-            <div class="container">
-                <div class="section_header">
-                    <h2 class="section_ttl">CONTACT.</h2>
-                </div>
-                <div class="section_body">
-                    <p class="discription">説明</p>
-                    <a class="btn_contact" href="">CONTACT</a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <div class="container">
-            <ul class="list_footer">
-                <li><a class="youtube" href="" alt="youtube"></a></li>
-                <li><a class="twitter" href="" alt="twitter"></a></li>
-                <li><a class="facebook" href="" alt="facebook"></a></li>
-            </ul>
-            <p><small>©2020 javascript-practice002</small></p>
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="./script/hero-slider.js"></script>
+            <script src="./script/reduce.js"></script>
+            <script src="./script/main.js"></script>
         </div>
-    </footer>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__ui">
+                <li class="mobile-menu__li"><a href="#about"><span class="ttl">about</span></a></li>
+                <li class="mobile-menu__li"><a href="#feature"><span class="ttl">feature</span></a></li>
+                <li class="mobile-menu__li"><a href="#profile"><span class="ttl">profile</span></a></li>
+                <li class="mobile-menu__li"><a href="#portfolio"><span class="ttl">portfolio</span></a></li>
+                <li class="mobile-menu__li"><a href="#contact"><span class="ttl">contact</span></a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>

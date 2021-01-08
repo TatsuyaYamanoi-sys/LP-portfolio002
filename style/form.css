@@ -1,0 +1,64 @@
+.contentwidth, .header__innner, .container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+}
+
+input {
+  vertical-align: baseline;
+}
+
+label, .grid_left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  margin-bottom: 20px;
+}
+
+input, button, select, textarea, .grid_right {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-left: 1em;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  background-color: #000;
+  color: #FFF;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.link_top {
+  display: block;
+  text-align: end;
+  margin: 0 10px 20px 0;
+}
+/*# sourceMappingURL=form.css.map */
