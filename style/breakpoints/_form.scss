@@ -1,0 +1,75 @@
+.contentwidth{
+    width: 90%;
+    margin: 0 auto;
+    max-width: $contentMaxWidth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    position: static;
+    background-color: $cBlack;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 60px;
+    &__innner {
+        @extend .contentwidth;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__logo {
+        display: inline-block;
+        & .logo img{
+            height: 100px;
+        }
+    }
+}
+
+.container {
+    @extend .contentwidth;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    @extend .inner;
+}
+
+input{
+	vertical-align: baseline;
+}
+
+label, .grid_left {
+    grid-column: 1 / 2;
+    margin-bottom: 20px;
+}
+
+input, button, select, textarea, .grid_right {
+    grid-column: 2 / 3;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-left: 1em; 
+}
+
+input[type="submit"] {
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    background-color: $cBlack;
+    color: $cWhite;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 2px solid $cBlack;
+    border-radius: 5px;
+}
+
+.link_top {
+    display: block;
+    text-align: end;
+    margin: 0 10px 20px 0;
+}

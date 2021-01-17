@@ -1,6 +1,6 @@
 .swiper-container {
   width: 100%;
-  height: 400px;
+  height: 480px;
 }
 
 .swiper-slide {
@@ -13,7 +13,7 @@
   border-radius: 50%;
   width: 180px;
   height: 180px;
-  margin: 20px 2px 30px 2px;
+  margin: 20px 2px 60px 2px;
   -webkit-box-shadow: 0 0 20px rgba(0, 210, 255, 0.8);
           box-shadow: 0 0 20px rgba(0, 210, 255, 0.8);
   -webkit-box-sizing: border-box;
@@ -46,7 +46,7 @@ li {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: bottom;
 }
 
@@ -530,6 +530,10 @@ section:last-child {
 
 .section-about {
   margin-top: -24px;
+}
+
+.swiper-slide .slide-link {
+  color: #FFF;
 }
 
 .section-contact__body {

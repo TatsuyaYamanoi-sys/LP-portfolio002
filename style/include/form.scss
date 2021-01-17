@@ -1,0 +1,86 @@
+@import "../modules/variables";
+
+.inner{
+    width: 80%;
+    margin: 0 auto;
+    max-width: $contentMaxWidth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    width: 100%;
+    height: 100px;
+    background-color: $cBlack;
+    margin-bottom: 60px;
+    &__inner{
+        @extend .inner;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__logo {
+        display: inline-block;
+        & .logo img{
+            height: 100px;
+        }
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 2fr 1fr; //残り全て使う場合1fr
+    @extend .inner;
+}
+
+input{
+	vertical-align: baseline;
+}
+
+.grid_left { 
+    grid-column: 1 / 2;
+    margin: 0 0 20px 60px;
+}
+
+input, button, select, textarea, .grid_right {
+    grid-column: 2 / 3;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-left: 1em; 
+}
+
+.submit-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+    // margin: 0 calc(50% - 100px);
+    margin: 40px 20px;
+    width: 200px;
+    height: 40px;
+    background-color: $cBlack;
+    color: $cWhite;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 2px solid $cBlack;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.link_top {
+    display: block;
+    text-align: end;
+    margin: 0 20px 40px 0;
+}
+
+.send-msg {
+    text-align: center;
+    margin-bottom: 60px;
+}

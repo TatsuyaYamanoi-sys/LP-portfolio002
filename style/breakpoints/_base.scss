@@ -25,12 +25,6 @@
 //     padding-bottom: ;
 // }
 
-// .contentwidth{
-//     width: 90%;
-//     margin: 0 auto;
-//     max-width: $contentMaxWidth;
-// }
-
 a {
     text-decoration: none;
 }
@@ -38,7 +32,7 @@ li {
     list-style: none;
 }
 img {
-    max-width: 100%;
+    width: 100%;
     vertical-align: bottom;
 }
 .inner {
@@ -281,7 +275,6 @@ section {
     //             transform: translateY(-11px) rotate(-45deg);
     //         }
     //     }
-        
     // }
 }
 
@@ -465,6 +458,19 @@ section {
     }
     &__ttl {
         @extend .section-ttl;
+    }
+}
+.swiper-slide {
+    .slide{
+        &-link {
+            color: $cWhite;
+        }
+        // &-ttl {
+
+        // }
+        // &-discription {
+
+        // }
     }
 }
 .section-contact {
